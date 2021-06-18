@@ -1,0 +1,125 @@
+.hide {
+  display: none;
+}
+
+.close {
+  position: absolute;
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+  opacity: 0.2;
+  right: 0;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 8px 15px;
+}
+
+.close:hover {
+  opacity: 0.4;
+}
+
+.login-form {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.login-form-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  z-index: 1000;
+}
+
+.login-form-box {
+  animation: slideIn 0.25s;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  margin: 30px auto;
+  padding-bottom: 40px;
+  box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-clip: padding-box;
+  border-radius: 6px;
+  top: 0;
+}
+
+.login-form-box h1 {
+  margin: 40px 0;
+}
+
+.login-form-box input[type="text"],
+input[type="password"] {
+  display: block;
+  width: 70%;
+  margin: 0 15% 10px;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.login-form-box input[type="checkbox"] {
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.keep-sign-in {
+  display: flex;
+  justify-content: center;
+}
+
+.submit-button {
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+  color: white;
+}
+
+/* Dark background fade in out */
+
+.modal-backdrop {
+  animation: fadeIn 0.25s;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    top: -350px;
+  }
+  100% {
+    top: 0;
+  }
+}
