@@ -1,5 +1,7 @@
 import React from 'react'
 import './LoginForm.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const LoginForm = (props) => {
     return (
@@ -8,7 +10,7 @@ const LoginForm = (props) => {
         <div className="login-form-container">
             <div className="login-form-box">
                 <h1>Login</h1>
-                <button className="close" onClick={() => props.setModal(true)}>x</button>
+                <button className="close" onClick={() => props.setModal(false)}>x</button>
                 <form>
                     <input
                         type="text"
@@ -28,12 +30,12 @@ const LoginForm = (props) => {
                     <button type="submit" className="submit-button">Sign in</button>    
                     <p>No account yet? <a href="/">Register</a></p>
                     <p>OR</p>
-                    <ul className="social-media-container">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>   
                 </form>
+                <ul className="social-media-container">
+                    <li><button className="facebook"><FontAwesomeIcon icon={faFacebook} /></button></li>
+                    <li><button className="twitter"><FontAwesomeIcon icon={faTwitter} /></button></li>
+                    <li><button className="google"><FontAwesomeIcon icon={faGoogle} /></button></li>
+                </ul> 
             </div>
         </div>
     </div>
