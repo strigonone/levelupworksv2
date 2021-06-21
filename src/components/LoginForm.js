@@ -4,11 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faGoogle } from '@fortawesome/free-brands-svg-icons';
 
 const LoginForm = (props) => {
-
     // Closes modal if backdrop is clicked
     const backdropClicked = (e) => {if (props.showModal === true && e.target) props.setModal(false)};
     const [showLogin, setLogin] = useState(true);
-
+    
+    const resetStateHandler = () => {
+        setLogin(true);
+        props.setModal(false);
+    }
+    
     return (
     <div className={props.showModal ? "login-form" : "login-form hide" }>
         <div className="modal-backdrop fade-in" onClick={(e) => backdropClicked(e)}></div>
@@ -16,7 +20,7 @@ const LoginForm = (props) => {
             
         {showLogin ? <div className="login-form-box" >
                 <h1>Login</h1>
-                <button className="close" onClick={() => props.setModal(false)}>x</button>
+                <button className="close" onClick={() => resetStateHandler()}>x</button>
                 <form>
                     <input type="text" name="username" placeholder="Username" required />
                     <input type="password" name="password" placeholder="Password" required />
@@ -35,7 +39,7 @@ const LoginForm = (props) => {
 
             <div className="register-form login-form-box">
                 <h1>Create a new account</h1>
-                <button className="close" onClick={() => props.setModal(false)}>x</button>
+                <button className="close" onClick={() => resetStateHandler()}>x</button>
                 <div>
                     <h2>I'm a...</h2>
                     <form action="">
