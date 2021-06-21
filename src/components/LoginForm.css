@@ -18,6 +18,13 @@
 .close:hover {
   opacity: 0.4;
 }
+.switch-link {
+  font-size: 16px;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+}
 
 /* Login Form CSS */
 .login-form {
@@ -146,14 +153,59 @@ input[type="email"] {
 
 /* Register Form css */
 
-.register-form form ul {
-  display: flex;
-  justify-content: space-evenly;
+.register-form ul {
   padding: 0;
+}
+
+.register-form h2 {
+  margin: 0 0 20px;
+}
+
+.register-selector {
+  display: flex;
+  justify-content: center;
+  margin: 5px auto 25px;
+}
+
+.register-selector input {
+  margin: 0;
+  padding: 0;
+  appearance: none;
+}
+
+.student-op,
+.teacher-op {
+  background-image: url("../assets/img/placeholderimg.jpg");
+}
+
+.register-option {
+  cursor: pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 15px;
+  width: 140px;
+  height: 140px;
+  transition: all 100ms ease-in;
+  filter: brightness(0.8) grayscale(1) opacity(0.5);
+}
+
+.register-option:hover {
+  filter: brightness(1.1) grayscale(0.5) opacity(0.9);
+}
+
+.register-selector input:active + .register-option {
+  opacity: 0.9;
+}
+.register-selector input:checked + .register-option {
+  filter: none;
 }
 
 .register-form form ul img {
   width: 180px;
+}
+
+.register-button {
+  margin-top: 20px;
 }
 
 /* Dark background fade in out */
