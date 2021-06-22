@@ -1,0 +1,16 @@
+=== Basic Docker CLI for Levelupworks project ===
+// Create image for Development or production
+docker build -f Dockerfile.dev -t levelupworks-image-dev .
+docker build -f Dockerfile.prod -t levelupworks-image-prod .
+
+// Creates and starts container using existing images
+docker run --env-file ./config/.env -v ${pwd}\src:/app/src -d -p 3000:3000 --name levelupworks-con-dev levelupworks-image-dev
+docker run --env-file ./config/.env -v ${pwd}\src:/app/src -d -p 8080:80 --name levelupworks-con-prod levelupworks-image-prod
+
+// Add git docker remote
+git remote add docker https://git.heroku.com/levelupworksv2.git
+
+// Commands to add image and push
+docker tag <image> registry.heroku.com/levelupworksv2/web
+docker push registry.heroku.com/levelupworksv2/web
+heroku container:release web --remote docker

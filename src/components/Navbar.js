@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
         <div>
-            
+            <h1>Omgplswork</h1>
             <div>
                 <button onClick={() => setShowModal(true)}>Login</button>
                 <LoginForm showModal={showModal} setModal={setShowModal} />
