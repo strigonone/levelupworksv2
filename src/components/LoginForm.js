@@ -21,7 +21,7 @@ const LoginForm = (props) => {
                     <input type="password" name="password" placeholder="Password" required />
                     <p className="forgot-password">Forgot Password?</p>
                     <p className="keep-sign-in"><input type="checkbox" />Keep me signed in</p>                             
-                    <button type="submit" className="submit-button" >Sign in</button>    
+                    <button type="submit" className="submit-button" >Log in</button>    
                 </form>
                     {/* <p className="alt-register">No account yet? <button className="switch-link" onClick={() => setLogin(false)}>Register</button></p>
                     <p>OR</p>
