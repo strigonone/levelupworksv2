@@ -7,7 +7,6 @@ const Navbar = () => {
 
     return (
         <div>
-
             
             <div>
                 <button onClick={() => setShowModal(true)}>Login</button>
