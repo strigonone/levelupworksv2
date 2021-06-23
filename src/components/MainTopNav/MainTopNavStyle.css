@@ -1,0 +1,55 @@
+.TopNavMainBackground {
+	background-color: #43c0f6;
+	border: solid 2px #41baef;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.TopNavigationContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 40%;
+}
+
+.TopNavigation {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: "Open Sans";
+	font-size: 1em;
+	width: 100%;
+	justify-content: space-evenly;
+	flex-wrap: wrap-reverse;
+}
+
+.TopNavigation a {
+	text-decoration: none;
+	color: white;
+}
+
+.TopNavRegistrationContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.TopNavRegistrationContainer a {
+	text-decoration: none;
+	color: white;
+}
+
+.TopNavRegistrationSection {
+	display: flex;
+	flex-direction: row;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "Open Sans";
+	font-size: 1em;
+	color: white;
+	justify-content: space-evenly;
+}

@@ -1,0 +1,9 @@
+services:
+  web:
+    image: level-docker-image
+    ports:
+      - "8080:80"
+# webdb:
+#   image: levelupback-con-dev
+#   ports:
+#     - "27017:27017"

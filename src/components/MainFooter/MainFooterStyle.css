@@ -1,0 +1,21 @@
+.MainFooterLayout {
+	background-color: #f9a195;
+	color: #4b4c4d;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.FooterContainer {
+	width: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 3%;
+}
+
+.ContentContainer {
+	display: flex;
+	flex-direction: row;
+	width: 15%;
+}
