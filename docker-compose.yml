@@ -1,9 +1,31 @@
+version: "3"
 services:
-  web:
-    image: level-docker-image
+  react-app:
+    image: react-app
+    stdin_open: true
     ports:
-      - "8080:80"
-# webdb:
-#   image: levelupback-con-dev
-#   ports:
-#     - "27017:27017"
+      - "3000:3000"
+    networks:
+      - mern-app
+  api-server:
+    image: api-server
+    ports:
+      - "6969:6969"
+    networks:
+      - mern-app
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:3.6.19-xenial
+    ports:
+      - "8080:8080"
+    networks:
+      - mern-app
+    volumes:
+      - mongo-data:/data/db
+networks:
+  mern-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
