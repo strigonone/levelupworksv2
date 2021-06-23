@@ -2,20 +2,46 @@
 	background-color: #f9a195;
 	color: #4b4c4d;
 	width: 100%;
+	/* height: 100%; */
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 }
 
 .FooterContainer {
-	width: 70%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin: 3%;
+	margin: auto;
+	padding: 3%;
+	flex-wrap: wrap;
 }
 
 .ContentContainer {
 	display: flex;
 	flex-direction: row;
-	width: 15%;
+	justify-content: space-around;
+	width: 40%;
+	flex-wrap: wrap;
+}
+
+.footerLogos {
+	font-size: 3em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 20%;
+	margin: auto;
+}
+
+.footerBottomText {
+	text-align: center;
+	padding: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	/* margin: auto; */
 }
