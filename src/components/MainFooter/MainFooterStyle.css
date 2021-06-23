@@ -21,9 +21,10 @@
 .ContentContainer {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
-	width: 40%;
+	justify-content: space-evenly;
+	/* width: 100%; */
 	flex-wrap: wrap;
+	margin: auto;
 }
 
 .footerLogos {
@@ -34,14 +35,4 @@
 	flex-wrap: wrap;
 	width: 20%;
 	margin: auto;
-}
-
-.footerBottomText {
-	text-align: center;
-	padding: 2%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: space-evenly;
-	/* margin: auto; */
 }

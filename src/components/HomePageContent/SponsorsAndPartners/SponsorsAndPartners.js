@@ -1,9 +1,9 @@
 import React from "react";
 import "./SponsorsAndPartnersStyle.css";
-import GRIDAKL from "../../assets/img/GRIDAKL.jpeg";
-import Tw21 from "../../assets/img/techweek-logo-short-blue.png";
-import NZTech from "../../assets/img/NZTech-300dpi2.png";
-import missionReadyLogo from "../../assets/img/missionReadyLogo.png";
+import GRIDAKL from "../../../assets/img/GRIDAKL.jpeg";
+import Tw21 from "../../../assets/img/techweek-logo-short-blue.png";
+import NZTech from "../../../assets/img/NZTech-300dpi2.png";
+import missionReadyLogo from "../../../assets/img/missionReadyLogo.png";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
 	img: {
 		margin: "auto",
 		display: "block",
-		maxWidth: "100%",
-		maxHeight: "100%",
+		maxWidth: "20%",
+		maxHeight: "20%",
 	},
 }));
 
@@ -38,10 +38,10 @@ const SponsorsAndPartners = () => {
 
 				<Grid
 					item
-					md={12}
+					xs={12}
 					alignContent="center"
 					direction
-					justify="space-around"
+					justify="space-between"
 					className={classes.gridImgs}
 				>
 					<img src={NZTech} alt="NZTech" className={classes.img} />
