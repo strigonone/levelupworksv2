@@ -1,5 +1,5 @@
 import React from "react";
-import "./SponsorsAndPartnersStyle.css";
+
 import GRIDAKL from "../../../assets/img/GRIDAKL.jpeg";
 import Tw21 from "../../../assets/img/techweek-logo-short-blue.png";
 import NZTech from "../../../assets/img/NZTech-300dpi2.png";

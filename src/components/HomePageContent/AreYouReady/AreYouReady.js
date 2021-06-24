@@ -1,5 +1,4 @@
 import React from "react";
-import "./AreYouReadyStyle.css";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -32,12 +31,12 @@ const useStyles = makeStyles((theme) => ({
 		color: "white",
 		height: 48,
 		padding: "0 30px",
-		marginTop: 10,
+		// marginTop: 10,
 		fontWeight: "bold",
 		textAlign: "center",
-		marginLeft: 5,
-		fontFamily: "Titillium Web",
-		zIndex: '-2'
+		// marginLeft: 5,
+		// fontFamily: "Titillium Web",
+		// zIndex: "0",
 	},
 }));
 
