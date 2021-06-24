@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import LoginForm from "./LoginForm";
-import "./Navbar.css";
 
 const LoginButton = () => {
 	const [showModal, setShowModal] = useState(false);
@@ -8,6 +7,7 @@ const LoginButton = () => {
 	return (
 		<div>
 			<button onClick={() => setShowModal(true)}>Login</button>
+			<a href="/enrol"><button>Enrol</button></a>
 			<LoginForm showModal={showModal} setModal={setShowModal} />
 		</div>
 	);

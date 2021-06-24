@@ -27,7 +27,6 @@ const Enrolment = () => {
 
     const submitEnrol = e => {
         e.preventDefault();
-
         axios.post('http://localhost:6969/api/enrol', enrolData)
         .then(res => console.log(res.data))
     }
