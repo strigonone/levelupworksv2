@@ -23,8 +23,14 @@ const LoginForm = (props) => {
 	
     const submitLogin = e => {
         e.preventDefault();
-        axios.post('http://localhost:6969/api/signin', loginData)
-        .then(res => console.log(res.data))
+        axios.post('http://localhost:6969/api/login', loginData)
+        .then(function(res){
+			console.log(res)
+			if(res.data === 'Password OK') {
+				window.location = '/dashboard'
+			}
+		})
+		.catch((err) => {console.log(err)})
     }
 
 	return (
