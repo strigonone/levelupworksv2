@@ -1,18 +1,18 @@
 version: "3"
 services:
   react-app:
-    image: react-app
+    image: levelupworks-dev
     stdin_open: true
     ports:
       - "3000:3000"
     networks:
-      - mern-app
+      - levelupworks-network
   api-server:
-    image: api-server
+    image: levelupworks-api
     ports:
       - "6969:6969"
     networks:
-      - mern-app
+      - levelupworks-network
     depends_on:
       - mongo
   mongo:
@@ -20,11 +20,11 @@ services:
     ports:
       - "8080:8080"
     networks:
-      - mern-app
+      - levelupworks-network
     volumes:
       - mongo-data:/data/db
 networks:
-  mern-app:
+  levelupworks-network:
     driver: bridge
 volumes:
   mongo-data:
