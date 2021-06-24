@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 		padding: theme.spacing(4),
-		backgroundColor: "pink",
+		backgroundColor: "#FFDBE9",
+		boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",
 	},
 	gridImgs: {
 		// textAlign: "center",
@@ -42,7 +43,7 @@ const CourseGallery = () => {
 							alt="AlanTeaching"
 							className={classes.img}
 						/>
-						<p>Alan Teaching kids</p>
+						<h3>Alan Teaching kids</h3>
 						<p>Learn More</p>
 					</Grid>
 					<Grid item xs>
@@ -51,12 +52,12 @@ const CourseGallery = () => {
 							alt="AlanTeaching2"
 							className={classes.img}
 						/>
-						<p>Alan in a vibrant classroom</p>
+						<h3>Alan in a vibrant classroom</h3>
 						<p>Learn More</p>
 					</Grid>
 					<Grid item xs>
 						<img src={TvScreen} alt="Screen" className={classes.img} />
-						<p>Programming fun</p>
+						<h3>Programming fun</h3>
 						<p>Learn More</p>
 					</Grid>
 				</Grid>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -38,6 +39,11 @@ const useStyles = makeStyles((theme) => ({
 		// fontFamily: "Titillium Web",
 		// zIndex: "0",
 	},
+	link: {
+		textDecoration: "none",
+		color: theme.palette.text.primary,
+		fontFamily: "Titillium Web",
+	},
 }));
 
 const AreYouReady = () => {
@@ -51,10 +57,11 @@ const AreYouReady = () => {
 					Let us help you advance students in Digital Technoligies and other
 					learning areas with our project-based learning programme
 				</p>
-
-				<Button className={classes.buttonStyle} variant="contained">
-					Enroll Now
-				</Button>
+				<Link className={classes.link} to="/enrol">
+					<Button className={classes.buttonStyle} variant="contained">
+						Enroll Now
+					</Button>
+				</Link>
 			</Container>
 		</div>
 	);

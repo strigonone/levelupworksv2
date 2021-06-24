@@ -13,18 +13,13 @@ const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 		padding: theme.spacing(4),
-	},
-	gridImgs: {
-		// textAlign: "center",
-		display: "flex",
-		flexWrap: "wrap",
-		// flexDirection: "row",
+		// boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",
 	},
 	img: {
 		margin: "auto",
 		display: "block",
-		maxWidth: "20%",
-		maxHeight: "20%",
+		maxWidth: "100%",
+		maxHeight: "100%",
 	},
 }));
 
@@ -36,14 +31,7 @@ const SponsorsAndPartners = () => {
 			<Container maxWidth="lg">
 				<h1 style={{ textAlign: "center" }}>Sponsors and Partners</h1>
 
-				<Grid
-					item
-					xs={12}
-					alignContent="center"
-					direction
-					justify="space-between"
-					className={classes.gridImgs}
-				>
+				<Grid item xs={12} alignContent="center" direction container>
 					<img src={NZTech} alt="NZTech" className={classes.img} />
 					<img
 						src={missionReadyLogo}
