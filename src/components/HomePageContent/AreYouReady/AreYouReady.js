@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
 		textAlign: "center",
 		marginLeft: 5,
 		fontFamily: "Titillium Web",
+		zIndex: '-2'
 	},
 }));
 
