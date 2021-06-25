@@ -7,11 +7,13 @@ import AreYouReady from "../components/HomePageContent/AreYouReady/AreYouReady";
 import CourseGallery from "../components/HomePageContent/CourseGallery/CourseGallery";
 import WhatDoParentsSay from "../components/HomePageContent/WhatDoParentsSay/WhatDoParentsSay";
 import ProfessionalTeachers from "../components/HomePageContent/OurProfessionalTeachers/ProfessionalTeachers";
+import HowDoesItWork from "../components/HomePageContent/HowDoesItWork/HowDoesItWork";
 
 const HomePage = () => {
 	return (
 		<div>
 			<LoginButton />
+			<HowDoesItWork />
 			<ProfessionalTeachers />
 			<WhatDoParentsSay />
 			<CourseGallery />
