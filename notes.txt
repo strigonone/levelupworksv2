@@ -7,6 +7,10 @@ docker build -f Dockerfile.prod -t levelupworks-image-prod .
 docker run --env-file ./config/.env -v ${pwd}\src:/app/src -d -p 3000:3000 --name levelupworks-con-dev levelupworks-image-dev
 docker run --env-file ./config/.env -v ${pwd}\src:/app/src -d -p 8080:80 --name levelupworks-con-prod levelupworks-image-prod
 
+// Heroku Login 
+heroku login
+heroku container:login
+
 // Add git docker remote
 git remote add docker https://git.heroku.com/levelupworksv2.git
 
