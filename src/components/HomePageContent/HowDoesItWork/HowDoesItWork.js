@@ -36,7 +36,7 @@ const HowDoesItWork = () => {
 		<div className={classes.root}>
 			<Container maxWidth="lg" spacing={3}>
 				<h1 style={{ textAlign: "center" }}>How does it work?</h1>
-				<Grid container spacing={3}>
+				<Grid container spacing={6}>
 					<Grid item xs={12}>
 						<Paper className={classes.paper}>
 							Different levels for students with different learning expeirences
