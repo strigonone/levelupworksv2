@@ -6,12 +6,7 @@ const LoginForm = (props) => {
 	// Closes modal if backdrop is clicked
 	const backdropClicked = (e) => { if (props.showModal === true && e.target) props.setModal(false);};
 	const resetStateHandler = () => props.setModal(false);
-	const [loginData, setLoginData] = useState(
-        {  
-            email: "",
-            password: "",
-        }
-    )
+	const [loginData, setLoginData] = useState({ email: "",password: ""})
 
 	const handleLoginChange = e => {
         const { name, value } = e.target;

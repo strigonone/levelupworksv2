@@ -1,0 +1,38 @@
+.nav-button {
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 10px;
+}
+
+.enrol-nav-button {
+  background: #181818;
+  border: 1px solid #181818;
+  color: white;
+  transition: 0.1s;
+  background: #181818;
+}
+
+.login-nav-button {
+  margin-left: 10px;
+  background: none;
+  transition: 0.4s;
+}
+
+.enrol-nav-button:hover {
+  font-weight: bold;
+
+  border: 2px solid #181818;
+}
+
+.login-nav-button:hover {
+  font-weight: bold;
+  border: 2px solid #181818;
+}
+
+@media screen and (max-width: 600px) {
+  .login-button {
+    display: none;
+  }
+}
