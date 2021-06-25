@@ -8,11 +8,17 @@ import CourseGallery from "../components/HomePageContent/CourseGallery/CourseGal
 import WhatDoParentsSay from "../components/HomePageContent/WhatDoParentsSay/WhatDoParentsSay";
 import ProfessionalTeachers from "../components/HomePageContent/OurProfessionalTeachers/ProfessionalTeachers";
 import HowDoesItWork from "../components/HomePageContent/HowDoesItWork/HowDoesItWork";
+import WhatYouGet from "../components/HomePageContent/WhatYouGet/WhatYouGet";
+import CourseInformation from "../components/HomePageContent/CourseInformation/CourseInformation";
+import HeroComponent from "../components/HomePageContent/HeroComponent/HeroComponent";
 
 const HomePage = () => {
 	return (
 		<div>
 			<LoginButton />
+			<HeroComponent />
+			<CourseInformation />
+			<WhatYouGet />
 			<HowDoesItWork />
 			<ProfessionalTeachers />
 			<WhatDoParentsSay />

@@ -35,8 +35,7 @@ const WhatDoParentsSay = () => {
 						alt="AlanTeaching2"
 						className={classes.img}
 					/>
-					Image Carousel function goes here LOL Please attend back to this
-					function -> Johnny
+					Image Carousel function goes here LOL
 				</Grid>
 			</Container>
 		</div>
