@@ -15,6 +15,34 @@ heroku container:login
 git remote add docker https://git.heroku.com/levelupworksv2.git
 
 // Commands to add image and push
-docker tag <image> registry.heroku.com/levelupworksv2/web
+docker tag levelupworks-prod registry.heroku.com/levelupworksv2/web
+docker push registry.heroku.com/levelupworksv2/web
+heroku container:release web --remote docker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+docker tag levelupworks-prod registry.heroku.com/levelupworksv2/web
 docker push registry.heroku.com/levelupworksv2/web
 heroku container:release web --remote docker

@@ -7,6 +7,7 @@ const LoginForm = (props) => {
 	const backdropClicked = (e) => { if (props.showModal === true && e.target) props.setModal(false);};
 	const resetStateHandler = () => props.setModal(false);
 	const [loginData, setLoginData] = useState({ email: "",password: ""})
+	const [errorState, setErrorState] = useState("")
 
 	const handleLoginChange = e => {
         const { name, value } = e.target;
@@ -23,6 +24,8 @@ const LoginForm = (props) => {
 			console.log(res)
 			if(res.data === 'Password OK') {
 				window.location = '/dashboard'
+			} else {
+				setErrorState(res.data);
 			}
 		})
 		.catch((err) => {console.log(err)})
@@ -32,6 +35,7 @@ const LoginForm = (props) => {
 		<div className={props.showModal ? "login-form" : "login-form hide"}>
 			<div className="modal-backdrop fade-in" onClick={(e) => backdropClicked(e)}></div>
 			<div className="modal-form-container">
+				{errorState ?<div className="error-popup"><p>{errorState}</p></div>: ''}
 				<div className="login-form-box">
 					<h1>Login</h1>
 					<button className="close" onClick={() => resetStateHandler()}>x</button>
