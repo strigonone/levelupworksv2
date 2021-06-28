@@ -1,14 +1,15 @@
 import React from "react";
+import HowDoesItWorkProp from "./HowDoesItWorkProp";
 
-// import GRIDAKL from "../../../assets/img/GRIDAKL.jpeg";
-// import Tw21 from "../../../assets/img/techweek-logo-short-blue.png";
-// import NZTech from "../../../assets/img/NZTech-300dpi2.png";
-// import missionReadyLogo from "../../../assets/img/missionReadyLogo.png";
+import RocketInTheSky from "../../../assets/img/rocket 1.png";
+import Idea from "../../../assets/img/idea.png";
+import Puzzle from "../../../assets/img/Puzzle.png";
+import SmartGuy from "../../../assets/img/SmartGuy.png";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import Paper from "@material-ui/core/Paper";
+// import Paper from "@material-ui/core/Paper";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
@@ -34,19 +35,36 @@ const HowDoesItWork = () => {
 
 	return (
 		<div className={classes.root}>
-			<Container maxWidth="lg" spacing={3}>
+			<Container maxWidth="md" spacing={3}>
 				<h1 style={{ textAlign: "center" }}>How does it work?</h1>
 				<Grid container spacing={6}>
-					<Grid item xs={12}>
-						<Paper className={classes.paper}>
-							Different levels for students with different learning expeirences
-							and progress
-						</Paper>
+					<Grid item xs={3} container justify="space-around">
+						<HowDoesItWorkProp
+							text="Beginner"
+							image={<img src={RocketInTheSky} alt="RocketInTheSky" />}
+						/>
+						Stimulate Interest
 					</Grid>
-					<Grid item xs={12}>
-						<Paper className={classes.paper}>
-							Learning by doing with a lot of fun
-						</Paper>
+					<Grid item xs={3} container justify="space-around">
+						<HowDoesItWorkProp
+							text="Intermediate"
+							image={<img src={Idea} alt="Idea" />}
+						/>
+						Advanced Computational Thinking
+					</Grid>
+					<Grid item xs={3} container justify="space-around">
+						<HowDoesItWorkProp
+							text="Advanced"
+							image={<img src={Puzzle} alt="Puzzle" />}
+						/>
+						Real World Problem Solving
+					</Grid>
+					<Grid item xs={3} container justify="space-around">
+						<HowDoesItWorkProp
+							text="Professional"
+							image={<img src={SmartGuy} alt="SmartGuy" />}
+						/>
+						Professional Programming Language
 					</Grid>
 				</Grid>
 			</Container>

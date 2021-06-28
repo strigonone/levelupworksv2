@@ -12,13 +12,13 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		padding: theme.spacing(4),
 	},
-	list: {
-		listStyleType: "none",
-		display: "flex",
-		flexDirection: "row",
-		justifyContent: "space-between",
-		textDecoration: "none",
-	},
+	// list: {
+	// 	listStyleType: "none",
+	// 	display: "flex",
+	// 	flexDirection: "row",
+	// 	justifyContent: "space-between",
+	// 	textDecoration: "none",
+	// },
 }));
 
 const MainTopNav = () => {
