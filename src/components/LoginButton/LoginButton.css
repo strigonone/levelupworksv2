@@ -1,38 +1,41 @@
 .nav-button {
-  width: 130px;
-  height: 40px;
-  border-radius: 5px;
-  border: 1px solid grey;
-  margin-bottom: 10px;
+	width: 130px;
+	height: 40px;
+	border-radius: 10px;
+	/* border: 1px solid grey; */
+	border: none;
+	/* margin-bottom: 10px; */
+	text-transform: uppercase;
+	/* margin: 2%; */
 }
 
 .enrol-nav-button {
-  background: #181818;
-  border: 1px solid #181818;
-  color: white;
-  transition: 0.1s;
-  background: #181818;
+	background: #ffc144;
+	/* border: 1px solid #181818; */
+	/* color: black; */
+	transition: 0.1s;
 }
 
 .login-nav-button {
-  margin-left: 10px;
-  background: none;
-  transition: 0.4s;
+	margin-left: 10px;
+	background: none;
+	transition: 0.4s;
+	border: 1px solid grey;
 }
 
 .enrol-nav-button:hover {
-  font-weight: bold;
+	font-weight: bold;
 
-  border: 2px solid #181818;
+	/* border: 2px solid #181818; */
 }
 
 .login-nav-button:hover {
-  font-weight: bold;
-  border: 2px solid #181818;
+	font-weight: bold;
+	/* border: 2px solid #181818; */
 }
 
-@media screen and (max-width: 600px) {
-  .login-button {
-    display: none;
-  }
-}
+/* @media screen and (max-width: 600px) {
+	.login-button {
+		display: none;
+	}
+} */
