@@ -5,8 +5,8 @@ import AreYouReady from "../components/HomePageContent/AreYouReady/AreYouReady";
 // import WhatDoParentsSay from "../components/HomePageContent/WhatDoParentsSay/WhatDoParentsSay";
 import ProfessionalTeachers from "../components/HomePageContent/OurProfessionalTeachers/ProfessionalTeachers";
 import HowDoesItWork from "../components/HomePageContent/HowDoesItWork/HowDoesItWork";
-// import WhatYouGet from "../components/HomePageContent/WhatYouGet/WhatYouGet";
-// import CourseInformation from "../components/HomePageContent/CourseInformation/CourseInformation";
+import WhatYouGet from "../components/HomePageContent/WhatYouGet/WhatYouGet";
+import CourseInformation from "../components/HomePageContent/CourseInformation/CourseInformation";
 import HeroComponent from "../components/HomePageContent/HeroComponent/HeroComponent";
 import MainTopNav from "../components/MainTopNav/MainTopNav";
 import SimpleSlider from "../components/TesterLOL/testLOL";
@@ -16,14 +16,14 @@ const HomePage = () => {
 		<div>
 			<MainTopNav />
 			<HeroComponent />
-			{/* <CourseInformation /> */}
-			{/* <WhatYouGet /> */}
+			<CourseInformation />
+			<WhatYouGet />
 			<HowDoesItWork />
 			<ProfessionalTeachers />
 			{/* <WhatDoParentsSay /> */}
-			{/* <CourseGallery /> */}
 
 			<SimpleSlider />
+			{/* <CourseGallery /> */}
 			<AreYouReady />
 			<MainFooter />
 		</div>

@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		backgroundImage: `url(${MainBackground})`,
 		backgroundSize: "Cover",
-		padding: theme.spacing(4),
+		// padding: theme.spacing(4),
 	},
 	img: {
 		margin: "auto",

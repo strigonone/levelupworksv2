@@ -1,6 +1,6 @@
 import React from "react";
 import PeopleLOL from "../../../assets/img/peopleLOL.png";
-import BlueVectorBackground2 from "../../../assets/img/blueVector.png";
+import BlueVectorBackground from "../../../assets/img/blueVector.png";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		padding: theme.spacing(4),
 		// textAlign: "center",
-		backgroundImage: `url(${BlueVectorBackground2})`,
+		backgroundImage: `url(${BlueVectorBackground})`,
 		backgroundSize: "Cover",
 	},
 	img: {
