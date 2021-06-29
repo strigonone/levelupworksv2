@@ -1,38 +1,47 @@
 import React from "react";
+import BlueVectorBackground2 from "../../../assets/img/blueVector2.png";
 
-import TeachingKidsIcon from "./TeachingKidsIcon";
-import girlcuttingimage from "../../../assets/img/girlcuttingimage.jpg";
-import idea from "../../../assets/img/idea.png";
-import crticalThinking from "../../../assets/img/criticalThinking.png";
-import puzzle from "../../../assets/img/puzzling.jpg";
-import girlsplaying from "../../../assets/img/girlsplaying.jpg";
-import teamhands from "../../../assets/img/teamhands.png";
-import Atom from "../../../assets/img/atom.png";
-import laptopgirl from "../../../assets/img/girlonlaptop.jpg";
+import RocketInTheSky from "../../../assets/img/rocket 1.png";
+import Idea from "../../../assets/img/idea.png";
+import Puzzle from "../../../assets/img/Puzzle.png";
+import SmartGuy from "../../../assets/img/SmartGuy.png";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import DoneIcon from "@material-ui/icons/Done";
+import Paper from "@material-ui/core/Paper";
+import CheckBoxIcon from "@material-ui/icons/CheckBox";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 		padding: theme.spacing(4),
-		backgroundColor: "#FFDBE9",
-		boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",
-	},
-	gridImgs: {
-		// textAlign: "center",
-		display: "flex",
-		flexWrap: "wrap",
-		// flexDirection: "row",
+		backgroundImage: `url(${BlueVectorBackground2})`,
+		backgroundSize: "Cover",
 	},
 	img: {
 		margin: "auto",
 		display: "block",
-		maxWidth: "50%",
-		maxHeight: "50%",
+		maxWidth: "100%",
+		maxHeight: "100%",
+	},
+	paper: {
+		padding: theme.spacing(2),
+		textAlign: "center",
+		// color: theme.palette.text.secondary,
+		boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",
+		borderRadius: "100px",
+		border: "solid 3px black",
+		color: "#e67571",
+		fontWeight: "bold",
+		display: "flex",
+		flexDirection: "column",
+		alignItems: "center",
+		justifyContent: "space-around",
+	},
+	imgSetting: {
+		maxWidth: "75px",
+		maxHeight: "75px",
 	},
 }));
 
@@ -43,70 +52,80 @@ const WhatYouGet = () => {
 		<div className={classes.root}>
 			<Container maxWidth="lg">
 				<h1 style={{ textAlign: "center" }}>
-					What will your child get from this course?
+					What Will Your Child Get from Our Course?
 				</h1>
-				<Grid container>
+				<Grid container spacing={3} direction="row">
 					<Grid
 						item
-						lg
+						xs={6}
+						sm={3}
 						container
-						alignItems="center"
+						justify="space-around"
 						direction="column"
-						spacing={4}
+						alignItems="center"
+						style={{ fontWeight: "bold" }}
 					>
-						<TeachingKidsIcon
-							background={girlcuttingimage}
-							text="Creativity & Individuality"
-							icon={<img src={idea} alt="Idea" className={classes.img} />}
-						/>
-						<DoneIcon fontSize="large" style={{ color: "green" }} />
+						<Paper className={classes.paper}>
+							<img
+								src={RocketInTheSky}
+								alt="RocketInTheSky"
+								className={classes.imgSetting}
+							/>
+						</Paper>
+						Problem Solving
+						<CheckBoxIcon />
 					</Grid>
 					<Grid
 						item
-						lg
+						xs={6}
+						sm={3}
 						container
-						alignItems="center"
+						justify="space-around"
 						direction="column"
-						spacing={4}
+						alignItems="center"
+						style={{ fontWeight: "bold" }}
 					>
-						<TeachingKidsIcon
-							background={puzzle}
-							text="Critical Thinking & Problem Solving"
-							icon={
-								<img src={crticalThinking} alt="Idea" className={classes.img} />
-							}
-						/>
-						<DoneIcon fontSize="large" style={{ color: "green" }} />
+						<Paper className={classes.paper}>
+							<img src={Idea} alt="Idea" className={classes.imgSetting} />
+						</Paper>
+						Fun Learning
+						<CheckBoxIcon />
 					</Grid>
 					<Grid
 						item
-						lg
+						xs={6}
+						sm={3}
 						container
-						alignItems="center"
+						justify="space-around"
 						direction="column"
-						spacing={4}
+						alignItems="center"
+						style={{ fontWeight: "bold" }}
 					>
-						<TeachingKidsIcon
-							background={girlsplaying}
-							text="Communication & Collaboration"
-							icon={<img src={teamhands} alt="Idea" className={classes.img} />}
-						/>
-						<DoneIcon fontSize="large" style={{ color: "green" }} />
+						<Paper className={classes.paper}>
+							<img src={Puzzle} alt="Puzzle" className={classes.imgSetting} />
+						</Paper>
+						Team Work
+						<CheckBoxIcon />
 					</Grid>
 					<Grid
 						item
-						lg
+						xs={6}
+						sm={3}
 						container
-						alignItems="center"
+						justify="space-around"
 						direction="column"
-						spacing={4}
+						alignItems="center"
+						style={{ fontWeight: "bold" }}
 					>
-						<TeachingKidsIcon
-							background={laptopgirl}
-							text="Technology & Future Focus"
-							icon={<img src={Atom} alt="Idea" className={classes.img} />}
-						/>
-						<DoneIcon fontSize="large" style={{ color: "green" }} />
+						<Paper className={classes.paper}>
+							<img
+								src={SmartGuy}
+								alt="SmartGuy"
+								className={classes.imgSetting}
+							/>
+						</Paper>
+						Professional Knowledge
+						<CheckBoxIcon />
 					</Grid>
 				</Grid>
 			</Container>

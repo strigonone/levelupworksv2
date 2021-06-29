@@ -1,24 +1,41 @@
 import React from "react";
-import AlanSelfie from "../../../assets/img/AlanSelfie.jpg";
-import YounaChick from "../../../assets/img/youna_d800.jpg";
+import PeopleLOL from "../../../assets/img/peopleLOL.png";
+import BlueVectorBackground from "../../../assets/img/blueVector.png";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
 	root: {
 		flexGrow: 1,
 		padding: theme.spacing(4),
 		// textAlign: "center",
-		backgroundColor: "#FFDBE9",
-		boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",
+		backgroundImage: `url(${BlueVectorBackground})`,
+		backgroundSize: "Cover",
 	},
 	img: {
 		margin: "auto",
 		display: "block",
 		maxWidth: "100%",
 		maxHeight: "100%",
+	},
+	buttonStyle: {
+		// background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+		background: "none",
+		border: 0,
+		borderRadius: 5,
+		// boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
+		color: "black",
+		height: 48,
+		padding: "0 30px",
+		// marginTop: 10,
+		fontWeight: "bold",
+		textAlign: "center",
+		// marginLeft: 5,
+		// fontFamily: "Titillium Web",
+		// zIndex: "0",
 	},
 }));
 
@@ -28,41 +45,20 @@ const ProfessionalTeachers = () => {
 	return (
 		<div className={classes.root}>
 			<Container maxWidth="lg">
-				<h1 style={{ textAlign: "center" }}>Our Professional Teachers</h1>
-				<Grid container justify="center" alignItems="center">
-					<Grid xs>
-						<img src={AlanSelfie} alt="AlanSelfie" className={classes.img} />
+				<Grid container>
+					<Grid xs={6} container alignItems="center">
+						<h2 style={{ color: "#394781" }}>Our Professional Teachers</h2>
+						<p style={{ color: "#B0CFE4" }}>
+							We have a team of designers, software developers and IT
+							professionals who share the same passion for teaching. They make
+							sure to make coding fun and exciting for kids!
+						</p>
+						<Button className={classes.buttonStyle} variant="contained">
+							See More
+						</Button>
 					</Grid>
 					<Grid xs>
-						<img src={YounaChick} alt="YounaChick" className={classes.img} />
-					</Grid>
-				</Grid>
-				<Grid container justify="center">
-					<Grid xs>
-						<h3 style={{ textAlign: "center" }}>Alan Kawaii ㅇㅅㅇ</h3>
-						<li>Professional Educator and Technologist</li>
-						<li>
-							Co-Founder and Chief Technologiest of Mission ready HQ - a
-							professional tech career accelerator programme
-						</li>
-						<li>
-							Designed high impact tech education programmes for Unitec and
-							Otaho Polytechnic
-						</li>
-						<li>Trains NZ teachers to teach the Digital Curriculum</li>
-						<li>
-							Teach experience include 10 years in senior and leading technical
-							roles in IBM NZ
-						</li>
-					</Grid>
-					<Grid xs>
-						<h3 style={{ textAlign: "center" }}>
-							Youna Jung - Guest Instructor
-						</h3>
-						<li>School teaching and corporate training experience</li>
-						<li>I.T Application Specialist at Auckland Airport</li>
-						<li>Bachelor degree majored in Education</li>
-						<li>Enjoys playing musical instruments and ice figure skating</li>
+						<img src={PeopleLOL} alt="peopleLOL" className={classes.img} />
 					</Grid>
 				</Grid>
 			</Container>
