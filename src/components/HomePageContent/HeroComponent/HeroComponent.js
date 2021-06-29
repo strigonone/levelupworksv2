@@ -1,6 +1,6 @@
 import React from "react";
 import LazyHero from "react-lazy-hero";
-import Hero from "../../../assets/img/HeroImageTopSection.jpg";
+import YellowVector from "../../../assets/img/Vector 5.png";
 import { Link } from "react-router-dom";
 
 // import Container from "@material-ui/core/Container";
@@ -22,11 +22,12 @@ const useStyles = makeStyles((theme) => ({
 		maxHeight: "100%",
 	},
 	buttonStyle: {
-		background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+		// background: "linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)",
+		background: "#FFC144",
 		border: 0,
 		borderRadius: 5,
 		boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
-		color: "white",
+		color: "black",
 		height: 48,
 		padding: "0 30px",
 		// marginTop: 10,
@@ -50,9 +51,9 @@ const HeroComponent = () => {
 		// <div className={classes.root}>
 		/* <Container maxWidth={false} disableGutters={true}> */
 		<div>
-			<LazyHero imageSrc={Hero}>
+			<LazyHero imageSrc={YellowVector} opacity="0">
 				<h1>Prepare Young Minds​​ for a Better Future</h1>
-				<h2>Applicable education programmes for children</h2>
+
 				<Link className={classes.link} to="/enrol">
 					<Button className={classes.buttonStyle} variant="contained">
 						Enroll Now
