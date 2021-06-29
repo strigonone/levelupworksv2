@@ -51,7 +51,7 @@
   position: relative;
   flex-direction: column;
   background-color: white;
-  width: 550px;
+  width: 530px;
   margin: 30px auto;
   padding-bottom: 30px;
   box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
@@ -62,15 +62,17 @@
 }
 
 .login-form-box h1 {
-  margin: 35px 0;
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: #e67571;
 }
 
 .login-form-box input[type="text"],
 .login-form-box input[type="password"],
 .login-form-box input[type="email"] {
   display: block;
-  width: 60%;
-  margin: 0 20% 10px;
+  width: 70%;
+  margin: 0 auto 10px;
   height: 40px;
   padding: 6px 12px;
   font-size: 14px;
@@ -93,8 +95,14 @@
   height: 15px;
 }
 
+.login-form-box form {
+  background-color: #f6fbff;
+  margin: 0 60px;
+  padding-top: 30px;
+}
+
 .forgot-password {
-  width: 60%;
+  width: 70%;
   text-align: right;
   margin: 3px auto 0;
   font-size: 0.8rem;
@@ -115,8 +123,8 @@
   padding: 10px 24px;
   font-size: 18px;
   border-radius: 6px;
-  margin: 30px 0;
-  background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
+  margin: 10px 0 20px;
+  background: #26315b;
   border: none;
   color: white;
   text-shadow: 0 2px 1px rgb(0 0 0 / 20%), 0 0 18px rgb(0 0 0 / 20%);

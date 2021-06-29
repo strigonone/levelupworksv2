@@ -1,0 +1,112 @@
+.insurance-quote-container {
+  margin: 20px 100px;
+}
+
+.form-error-container {
+  display: flex;
+  height: 40px;
+
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.form-error {
+  display: grid;
+  align-items: center;
+  background-color: #b71234;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.insurance-quote-body {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.insurance-quote-body p {
+  width: 100%;
+  font-weight: bold;
+  color: white;
+}
+
+.insurance-progress {
+  text-align: center;
+  margin: 30px 0 0;
+  padding: 0;
+}
+
+.insurance-progress li {
+  display: inline-block;
+  width: 33%;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+.insurance-icons {
+  font-size: 3.5rem;
+  color: #0067a7;
+  margin-bottom: 15px;
+}
+
+.progress-track {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5px;
+  top: 14px;
+  background-color: #dfdfdf;
+  z-index: -2;
+}
+
+.progress-track-overlay {
+  height: 5px;
+  background: #0076be;
+  position: relative;
+  z-index: -1;
+}
+
+.insurance-circle {
+  color: #888888;
+  background: white;
+}
+
+.incomplete {
+  color: #cacaca;
+}
+
+.complete {
+  color: #0076be;
+}
+
+.insurance-circle-complete {
+  color: #b71234;
+}
+
+.insurance-form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.insurance-form label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.insurance-form input[type="text"],
+input[type="email"],
+input[type="number"] {
+  display: flex;
+  padding: 6px 10px;
+  width: 70%;
+  max-width: 480px;
+}
+
+.insurance-side-info {
+  width: 30%;
+}

@@ -52,7 +52,7 @@ const MainTopNav = () => {
 						direction="row"
 						alignItems="flex-end"
 					>
-						<LoginButton />
+						<LoginButton showEnrol={true} />
 					</Grid>
 				</Grid>
 			</Container>

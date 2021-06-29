@@ -1,41 +1,27 @@
 .nav-button {
-	width: 130px;
-	height: 40px;
-	border-radius: 10px;
-	/* border: 1px solid grey; */
-	border: none;
-	/* margin-bottom: 10px; */
-	text-transform: uppercase;
-	/* margin: 2%; */
+  width: 130px;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  text-transform: uppercase;
 }
 
 .enrol-nav-button {
-	background: #ffc144;
-	/* border: 1px solid #181818; */
-	/* color: black; */
-	transition: 0.1s;
+  background: #ffc144;
+  transition: 0.1s;
 }
 
 .login-nav-button {
-	margin-left: 10px;
-	background: none;
-	transition: 0.4s;
-	border: 1px solid grey;
+  margin-left: 10px;
+  background: none;
+  transition: 0.11s;
+  border: 1px solid #b08f71;
 }
 
 .enrol-nav-button:hover {
-	font-weight: bold;
-
-	/* border: 2px solid #181818; */
+  font-weight: bold;
 }
 
 .login-nav-button:hover {
-	font-weight: bold;
-	/* border: 2px solid #181818; */
+  font-weight: bold;
 }
-
-/* @media screen and (max-width: 600px) {
-	.login-button {
-		display: none;
-	}
-} */

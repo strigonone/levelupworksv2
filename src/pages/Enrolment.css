@@ -1,13 +1,16 @@
 .enrol-form-box {
-  margin: 0 auto;
+  margin: 20px auto 100px;
+  max-width: 1000px;
 }
 
 .enrol-form-container {
-  margin: 20px 50px;
+  margin: 20px auto;
+  background-color: #f6fbff;
+  padding: 40px 0;
 }
 
-.enrol-form-box form {
-  width: 80%;
+.enrol-form-container form {
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -24,9 +27,9 @@
   align-items: center;
 }
 
-.enrol-form-box input[type="text"],
-.enrol-form-box input[type="password"],
-.enrol-form-box input[type="email"] {
+.enrol-form-container input[type="text"],
+.enrol-form-container input[type="password"],
+.enrol-form-container input[type="email"] {
   display: block;
   width: 90%;
   max-width: 430px;
@@ -65,29 +68,33 @@
 .course-small {
   font-size: 0.7rem;
   margin: 0;
+  color: #979797;
 }
 
 .course-price {
-  margin-bottom: 0;
+  margin: 15px 0 0 0;
+  font-size: 1.5rem;
 }
 
 .course-selector {
   display: flex;
-  justify-content: center;
-  margin-bottom: 25px;
+  justify-content: space-between;
+  margin-bottom: 60px;
   padding: 0;
 }
 
 .course-option {
   cursor: pointer;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: white;
   text-align: center;
   width: 32%;
+  padding: 20px 0;
   max-width: 250px;
-  border: 1px solid #adadad;
-  border-radius: 10px;
+  border: 2px solid #c4c4c4;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   transition: all 100ms ease-in;
+
   /* filter: grayscale(1) opacity(0.7); */
 }
 
@@ -95,35 +102,34 @@
   margin: 0 20px;
 }
 
-.course-option h2 {
-  margin: 10px 0 2px 0;
-}
-
-.course-desc {
-  font-size: 0.8rem;
-  margin: 0 0 10px 0;
+.course-title {
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
 }
 
 .course-option input[type="radio"] {
   width: 20px;
   height: 20px;
   margin: 10px 0 25px 0;
+  filter: grayscale(1);
 }
 
-.course-image-placeholder {
-  width: 85%;
+.course-image {
+  width: 75%;
   height: 100px;
-  margin: 0 auto 10px;
-  background-color: grey;
-  border-radius: 5px;
+  margin: 30px auto 50px;
+}
+
+.course-image img {
+  border-radius: 100%;
 }
 
 .course-option:hover {
-  filter: grayscale(0.3) opacity(0.9);
+  filter: opacity(1);
 }
 
 .course-selector input:active + .course-option {
-  opacity: 0.9;
+  opacity: 1;
 }
 .course-selector input:checked + .course-option {
   filter: none !important;
@@ -136,4 +142,16 @@
 .course-button {
   display: flex;
   margin: 40px auto 0;
+  padding: 15px 15%;
+}
+
+/* Login button css */
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.already-account {
+  margin-right: 12px;
 }

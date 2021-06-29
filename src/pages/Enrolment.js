@@ -2,6 +2,13 @@ import React, {useState} from 'react';
 import './Enrolment.css';
 import axios from 'axios';
 
+import ProgressTrack from '../components/EnrolmentCourse/EnrolProgressTrack';
+import LoginButton from "../components/LoginButton/LoginButton";
+import EnrolmentCourse from "../components/EnrolmentCourse/EnrolmentCourse";
+
+import Course1 from '../assets/img/EnrolCourse/Course1.png'
+import Course2 from '../assets/img/EnrolCourse/Course2.png'
+
 const Enrolment = () => {
     const [enrolData,setEnrol] = useState(
         {  
@@ -34,39 +41,17 @@ const Enrolment = () => {
 
     return (
         <div className="enrol-form-box">
-            <div className="enrol-form-container">
+            <ProgressTrack />
+            <LoginButton />
             <h1>Enrolment form</h1>
+            <div className="enrol-form-container"> 
                 <div>     
                     <form onSubmit={submitEnrol}>
                         <h2>Select course:</h2>
                         <div className="course-selector">
-                            <label className="course-option">
-                                <h2>Course 1</h2>
-                                <p className="course-desc">Lorem ipsum dolor sit amet</p>
-                                <div className="course-image-placeholder"></div>
-                                <p className="course-small">Start Date: 01 January 2022<br/>Time: 0:00AM<br/>Location: Auckland</p>
-                                <h2 className="course-price">$XXX</h2>
-                                <p className="course-small">for Term 2 (9 Sessions)</p>
-                                <input type="radio" name="courseNo" value="1" checked={enrolData.courseNo === "1"} onChange={handleEnrolChange} />
-                            </label>
-                            <label className="course-option">
-                                <h2>Course 2</h2>
-                                <p className="course-desc">Lorem ipsum dolor sit amet</p>
-                                <div className="course-image-placeholder"></div>
-                                <p className="course-small">Start Date: 01 January 2022<br/>Time: 0:00AM<br/>Location: Auckland</p>
-                                <h2 className="course-price">$XXX</h2>
-                                <p className="course-small">for Term 2 (9 Sessions)</p>
-                                <input type="radio" name="courseNo" value="2" checked={enrolData.courseNo === "2"}  onChange={handleEnrolChange} />
-                            </label>
-                            <label className="course-option">
-                                <h2>Course 3</h2>
-                                <p className="course-desc">Lorem ipsum dolor sit amet</p>
-                                <div className="course-image-placeholder"></div>
-                                <p className="course-small">Start Date: 01 January 2022<br/>Time: 0:00AM<br/>Location: Auckland</p>
-                                <h2 className="course-price">$XXX</h2>
-                                <p className="course-small">for Term 2 (9 Sessions)</p>
-                                <input type="radio" name="courseNo" value="3" checked={enrolData.courseNo === "3"}  onChange={handleEnrolChange} />
-                            </label>
+                            <EnrolmentCourse title="Course 1" image={Course1} price="199" value="1" currentCourseNo={enrolData.courseNo} onChange={handleEnrolChange} />
+                            <EnrolmentCourse title="Scratch Game Building" image={Course2}  price="360" value="2" currentCourseNo={enrolData.courseNo} onChange={handleEnrolChange} />
+                            <EnrolmentCourse title="Course 3" price="299" value="3" image={Course1}  currentCourseNo={enrolData.courseNo} onChange={handleEnrolChange} />
                         </div>
 
                         <div className="enrol-field">
