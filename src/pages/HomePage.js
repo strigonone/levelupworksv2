@@ -1,9 +1,9 @@
 import React from "react";
 import MainFooter from "../components/MainFooter/MainFooter";
-// import AreYouReady from "../components/HomePageContent/AreYouReady/AreYouReady";
+import AreYouReady from "../components/HomePageContent/AreYouReady/AreYouReady";
 // import CourseGallery from "../components/HomePageContent/CourseGallery/CourseGallery";
 // import WhatDoParentsSay from "../components/HomePageContent/WhatDoParentsSay/WhatDoParentsSay";
-// import ProfessionalTeachers from "../components/HomePageContent/OurProfessionalTeachers/ProfessionalTeachers";
+import ProfessionalTeachers from "../components/HomePageContent/OurProfessionalTeachers/ProfessionalTeachers";
 import HowDoesItWork from "../components/HomePageContent/HowDoesItWork/HowDoesItWork";
 // import WhatYouGet from "../components/HomePageContent/WhatYouGet/WhatYouGet";
 // import CourseInformation from "../components/HomePageContent/CourseInformation/CourseInformation";
@@ -19,11 +19,12 @@ const HomePage = () => {
 			{/* <CourseInformation /> */}
 			{/* <WhatYouGet /> */}
 			<HowDoesItWork />
-			{/* <ProfessionalTeachers /> */}
+			<ProfessionalTeachers />
 			{/* <WhatDoParentsSay /> */}
 			{/* <CourseGallery /> */}
-			{/* <AreYouReady /> */}
+
 			<SimpleSlider />
+			<AreYouReady />
 			<MainFooter />
 		</div>
 	);

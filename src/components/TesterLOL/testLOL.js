@@ -8,7 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Container from "@material-ui/core/Container";
 // import Divider from "@material-ui/core/Divider";
 
-import HotParent from "../../assets/img/HotChick.jpg";
+import jane from "../../assets/img/jane.png";
+import caitlyn from "../../assets/img/caitlyn.png";
 // import Grid from "@material-ui/core/Grid";
 
 export default class SimpleSlider extends Component {
@@ -57,7 +58,7 @@ export default class SimpleSlider extends Component {
 				<Slider {...settings}>
 					<div className="box1">
 						<div className="imgBox">
-							<img src={HotParent} alt="HotParent" className="imgSettings" />
+							<img src={jane} alt="jane" className="imgSettings" />
 						</div>
 						<div className="detailss">
 							<h3>Jane</h3>
@@ -71,7 +72,7 @@ export default class SimpleSlider extends Component {
 					</div>
 					{/* <Divider orientation="vertical" /> */}
 					<div className="box1">
-						<img src={HotParent} alt="HotParent" className="imgSettings" />
+						<img src={caitlyn} alt="jane" className="imgSettings" />
 						<h3>Jane</h3>
 						<h5>Parent</h5>
 						<p>
