@@ -1,10 +1,9 @@
 import React from 'react'
 
-
 const EnrolmentCourse = (props) => {
 
     return (
-        <label className="course-option">
+        <label className={props.currentCourseNo === props.value ? "course-option selected" : "course-option"}>
             <h2 className="course-title">{props.title}</h2>
             <div className="course-image"><img src={props.image} alt="" /></div>
             <p className="course-small">Start Date: 01 January 2022<br/>Time: 0:00AM<br/>Location: Auckland</p>

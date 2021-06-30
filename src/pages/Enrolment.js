@@ -8,6 +8,7 @@ import EnrolmentCourse from "../components/EnrolmentCourse/EnrolmentCourse";
 
 import Course1 from '../assets/img/EnrolCourse/Course1.png'
 import Course2 from '../assets/img/EnrolCourse/Course2.png'
+import LevelUpLogo from '../assets/img/EnrolCourse/logolong.jpg';
 
 const Enrolment = () => {
     const [enrolData,setEnrol] = useState(
@@ -32,24 +33,26 @@ const Enrolment = () => {
         }));
     };
 
+    
+
     const submitEnrol = e => {
         e.preventDefault();
         axios.post('http://localhost:6969/api/enrol', enrolData)
         .then(res => console.log(res.data))
     }
-    // console.log(enrolData);
 
     return (
         <div className="enrol-form-box">
+            <img className="levelup-logo" src={LevelUpLogo} alt="Level Up Works Logo" />
             <ProgressTrack />
             <LoginButton />
             <h1>Enrolment form</h1>
             <div className="enrol-form-container"> 
-                <div>     
+                <div>
                     <form onSubmit={submitEnrol}>
                         <h2>Select course:</h2>
                         <div className="course-selector">
-                            <EnrolmentCourse title="Course 1" image={Course1} price="199" value="1" currentCourseNo={enrolData.courseNo} onChange={handleEnrolChange} />
+                            <EnrolmentCourse title="Course 1" image={Course1} price="199" value="1" currentCourseNo={enrolData.courseNo} onChange={handleEnrolChange}  />
                             <EnrolmentCourse title="Scratch Game Building" image={Course2}  price="360" value="2" currentCourseNo={enrolData.courseNo} onChange={handleEnrolChange} />
                             <EnrolmentCourse title="Course 3" price="299" value="3" image={Course1}  currentCourseNo={enrolData.courseNo} onChange={handleEnrolChange} />
                         </div>
