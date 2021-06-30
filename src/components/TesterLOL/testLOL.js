@@ -72,14 +72,18 @@ export default class SimpleSlider extends Component {
 					</div>
 					{/* <Divider orientation="vertical" /> */}
 					<div className="box1">
-						<img src={caitlyn} alt="jane" className="imgSettings" />
-						<h3>Jane</h3>
-						<h5>Parent</h5>
-						<p>
-							"I'm happy seeing my son, David happy with his course. I've seen a
-							different side of him. Thanks to Alan for teaching him new
-							things."
-						</p>
+						<div className="imgBox">
+							<img src={jane} alt="jane" className="imgSettings" />
+						</div>
+						<div className="detailss">
+							<h3>Jane</h3>
+							<h5>Parent</h5>
+							<p>
+								"I'm happy seeing my son, David happy with his course. I've seen
+								a different side of him. Thanks to Alan for teaching him new
+								things."
+							</p>
+						</div>
 					</div>
 					{/* <Divider orientation="vertical" /> */}
 					<div>

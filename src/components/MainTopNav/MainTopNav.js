@@ -37,11 +37,11 @@ const MainTopNav = () => {
 					>
 						<img src={LevelUpWorksLogo} alt="Level Up Works" />
 
-						<h4>Program</h4>
-						<h4>Our Team</h4>
-						<h4>Teaching with Us</h4>
-						<h4>Support</h4>
-						<h4>FAQ</h4>
+						<h4 style={{ margin: "0" }}>Program</h4>
+						<h4 style={{ margin: "0" }}>Our Team</h4>
+						<h4 style={{ margin: "0" }}>Teaching with Us</h4>
+						<h4 style={{ margin: "0" }}>Support</h4>
+						<h4 style={{ margin: "0" }}>FAQ</h4>
 					</Grid>
 
 					<Grid

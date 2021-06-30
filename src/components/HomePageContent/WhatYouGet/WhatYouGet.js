@@ -1,10 +1,10 @@
 import React from "react";
 import BlueVectorBackground2 from "../../../assets/img/blueVector2.png";
 
-import RocketInTheSky from "../../../assets/img/rocket 1.png";
-import Idea from "../../../assets/img/idea.png";
-import Puzzle from "../../../assets/img/Puzzle.png";
-import SmartGuy from "../../../assets/img/SmartGuy.png";
+import lightBulb from "../../../assets/img/lightbulb 1.png";
+import Confetti from "../../../assets/img/confetti.png";
+import TeamWork from "../../../assets/img/support 2.png";
+import Goal from "../../../assets/img/goal.png";
 
 import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -67,8 +67,8 @@ const WhatYouGet = () => {
 					>
 						<Paper className={classes.paper}>
 							<img
-								src={RocketInTheSky}
-								alt="RocketInTheSky"
+								src={lightBulb}
+								alt="lightBulb"
 								className={classes.imgSetting}
 							/>
 						</Paper>
@@ -86,7 +86,11 @@ const WhatYouGet = () => {
 						style={{ fontWeight: "bold" }}
 					>
 						<Paper className={classes.paper}>
-							<img src={Idea} alt="Idea" className={classes.imgSetting} />
+							<img
+								src={Confetti}
+								alt="Confetti"
+								className={classes.imgSetting}
+							/>
 						</Paper>
 						Fun Learning
 						<CheckBoxIcon />
@@ -102,7 +106,11 @@ const WhatYouGet = () => {
 						style={{ fontWeight: "bold" }}
 					>
 						<Paper className={classes.paper}>
-							<img src={Puzzle} alt="Puzzle" className={classes.imgSetting} />
+							<img
+								src={TeamWork}
+								alt="TeamWork"
+								className={classes.imgSetting}
+							/>
 						</Paper>
 						Team Work
 						<CheckBoxIcon />
@@ -118,11 +126,7 @@ const WhatYouGet = () => {
 						style={{ fontWeight: "bold" }}
 					>
 						<Paper className={classes.paper}>
-							<img
-								src={SmartGuy}
-								alt="SmartGuy"
-								className={classes.imgSetting}
-							/>
+							<img src={Goal} alt="Goal" className={classes.imgSetting} />
 						</Paper>
 						Professional Knowledge
 						<CheckBoxIcon />
