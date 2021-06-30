@@ -46,9 +46,9 @@ const ProfessionalTeachers = () => {
 		<div className={classes.root}>
 			<Container maxWidth="lg">
 				<Grid container>
-					<Grid xs={6} container alignItems="center">
+					<Grid xs container>
 						<h2 style={{ color: "#394781" }}>Our Professional Teachers</h2>
-						<p style={{ color: "#B0CFE4" }}>
+						<p style={{ color: "#394781" }}>
 							We have a team of designers, software developers and IT
 							professionals who share the same passion for teaching. They make
 							sure to make coding fun and exciting for kids!

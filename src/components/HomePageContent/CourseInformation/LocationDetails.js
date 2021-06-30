@@ -40,7 +40,24 @@ function createData(name, time, lessonDuration, sessions) {
 }
 
 const rows = [
-	createData("Epsom Girls Grammer School", "Saturdays 11:00am", "1 Hour", 9),
+	createData(
+		"Course 1 - Epsom Girls Grammer School",
+		"Saturdays 11:00am",
+		"1 Hour",
+		9
+	),
+	createData(
+		"Course 2 - Epsom Girls Grammer School",
+		"Saturdays 11:00am",
+		"1 Hour",
+		9
+	),
+	createData(
+		"Course 3 - Epsom Girls Grammer School",
+		"Saturdays 11:00am",
+		"1 Hour",
+		9
+	),
 ];
 
 export default function CourseLocation() {
@@ -59,14 +76,14 @@ export default function CourseLocation() {
 				</TableHead>
 				<TableBody>
 					{rows.map((row) => (
-						<TableRow key={row.name}>
+						<StyledTableRow key={row.name}>
 							<StyledTableCell component="th" scope="row">
 								{row.name}
 							</StyledTableCell>
 							<StyledTableCell>{row.time}</StyledTableCell>
 							<StyledTableCell>{row.lessonDuration}</StyledTableCell>
 							<StyledTableCell>{row.sessions}</StyledTableCell>
-						</TableRow>
+						</StyledTableRow>
 					))}
 				</TableBody>
 			</Table>
