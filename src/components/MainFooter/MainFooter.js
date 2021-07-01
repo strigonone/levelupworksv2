@@ -27,6 +27,23 @@ const useStyles = makeStyles((theme) => ({
 		maxWidth: "30%",
 		maxHeight: "30%",
 	},
+	listStyle: {
+		listStyleType: "none",
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-between",
+		textDecoration: "none",
+		padding: "0",
+		width: "85%",
+		cursor: "pointer",
+		// fontWeight: "bold",
+
+		"& li:hover": {
+			color: "rgb(230, 117, 113)",
+			transition: "0.5s",
+			fontWeight: "600",
+		},
+	},
 }));
 
 const MainFooter = () => {
@@ -35,15 +52,17 @@ const MainFooter = () => {
 		<div className={classes.root}>
 			<Container maxWidth="lg">
 				<Grid container spacing={3}>
-					<Grid item xs={6} container justify="space-around">
-						<h4>Program</h4>
-						<h4>Our Team</h4>
-						<h4>Teaching with Us</h4>
-						<h4>Support</h4>
-						<h4>FAQ</h4>
+					<Grid item sm={6} container justify="space-around">
+						<ul className={classes.listStyle}>
+							<li>Program</li>
+							<li>Our Team</li>
+							<li>Teaching with Us</li>
+							<li>Support</li>
+							<li>FAQ</li>
+						</ul>
 					</Grid>
 
-					<Grid item xs={6} container>
+					<Grid item lg>
 						{/* <h4>Subscribe</h4> */}
 						<TextField
 							id="filled-full-width"
@@ -62,9 +81,9 @@ const MainFooter = () => {
 				</Grid>
 				<Divider style={{ margin: "3%", color: "#c2c2c2" }} />
 				<Grid container spacing={3} justify="space-between">
-					<Grid item xs={4}>
+					<Grid item sm={4}>
 						<h5 style={{ margin: "2%" }}>Sponsors and Partners</h5>
-						<Grid item xs alignContent="center" direction container>
+						<Grid item sm alignContent="center" direction container>
 							<img
 								src={missionReadyLogo}
 								alt="MissionReadyLogo"
@@ -75,7 +94,7 @@ const MainFooter = () => {
 							<img src={NZTech} alt="NZTech" className={classes.img} />
 						</Grid>
 					</Grid>
-					<Grid item xs={3}>
+					<Grid item sm={4}>
 						<Grid container justify="space-around">
 							<LinkedInIcon fontSize="large" />
 							<FacebookIcon fontSize="large" />

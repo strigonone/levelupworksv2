@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	paper: {
 		padding: theme.spacing(2),
+		margin: theme.spacing(2),
 		textAlign: "center",
 		// color: theme.palette.text.secondary,
 		boxShadow: "0px 8px 15px rgba(0, 0, 0, 0.1)",

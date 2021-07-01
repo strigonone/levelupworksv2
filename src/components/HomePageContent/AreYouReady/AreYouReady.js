@@ -40,6 +40,11 @@ const useStyles = makeStyles((theme) => ({
 		// marginLeft: 5,
 		// fontFamily: "Titillium Web",
 		// zIndex: "0",
+		marginBlock: "15%",
+		"&:hover": {
+			background: "#283258",
+			color: "white",
+		},
 	},
 	link: {
 		textDecoration: "none",
@@ -73,7 +78,7 @@ const AreYouReady = () => {
 						</p>
 						<Link className={classes.link} to="/enrol">
 							<Button className={classes.buttonStyle} variant="contained">
-								Enroll Now
+								START NOW
 							</Button>
 						</Link>
 					</Grid>

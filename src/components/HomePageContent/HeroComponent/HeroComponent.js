@@ -2,6 +2,7 @@ import React from "react";
 import LazyHero from "react-lazy-hero";
 import YellowVector from "../../../assets/img/Vector 5.png";
 import { Link } from "react-router-dom";
+import "./HeroComponentStyle.css";
 
 // import Container from "@material-ui/core/Container";
 import { makeStyles } from "@material-ui/core/styles";
@@ -36,6 +37,10 @@ const useStyles = makeStyles((theme) => ({
 		// marginLeft: 5,
 		// fontFamily: "Titillium Web",
 		// zIndex: "0",
+		"&:hover": {
+			background: "#283258",
+			color: "white",
+		},
 	},
 	link: {
 		textDecoration: "none",
@@ -52,11 +57,11 @@ const HeroComponent = () => {
 		/* <Container maxWidth={false} disableGutters={true}> */
 		<div>
 			<LazyHero imageSrc={YellowVector} opacity="0">
-				<h1>Prepare Young Minds​​ for a Better Future</h1>
+				<h1 className="heroTitle">Prepare Young Minds​​ for a Better Future</h1>
 
 				<Link className={classes.link} to="/enrol">
 					<Button className={classes.buttonStyle} variant="contained">
-						Enroll Now
+						START NOW
 					</Button>
 				</Link>
 			</LazyHero>

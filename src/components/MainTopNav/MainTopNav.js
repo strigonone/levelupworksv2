@@ -13,13 +13,23 @@ const useStyles = makeStyles((theme) => ({
 		flexGrow: 1,
 		padding: theme.spacing(2),
 	},
-	// list: {
-	// 	listStyleType: "none",
-	// 	display: "flex",
-	// 	flexDirection: "row",
-	// 	justifyContent: "space-between",
-	// 	textDecoration: "none",
-	// },
+	listStyle: {
+		listStyleType: "none",
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "space-between",
+		textDecoration: "none",
+		padding: "0",
+		width: "85%",
+		cursor: "pointer",
+		fontWeight: "bold",
+
+		"& li:hover": {
+			color: "rgb(230, 117, 113)",
+			transition: "0.5s",
+			// fontWeight: "600",
+		},
+	},
 }));
 
 const MainTopNav = () => {
@@ -27,28 +37,30 @@ const MainTopNav = () => {
 	return (
 		<div className={classes.root}>
 			<Container maxWidth="lg">
-				<Grid container spacing={2} justify="space-between">
+				<Grid container spacing={3} justify="space-between">
 					<Grid
 						item
-						xs
+						md={6}
 						container
-						justify="space-around"
+						justify="space-between"
 						direction="row"
 						alignItems="flex-end"
 					>
 						<Link to="/">
 							<img src={LevelUpWorksLogo} alt="Level Up Works" />
 						</Link>
-						<h4 style={{ margin: "0" }}>Program</h4>
-						<h4 style={{ margin: "0" }}>Our Team</h4>
-						<h4 style={{ margin: "0" }}>Teaching with Us</h4>
-						<h4 style={{ margin: "0" }}>Support</h4>
-						<h4 style={{ margin: "0" }}>FAQ</h4>
+						<ul className={classes.listStyle}>
+							<li>Program</li>
+							<li>Our Team</li>
+							<li>Teaching with Us</li>
+							<li>Support</li>
+							<li>FAQ</li>
+						</ul>
 					</Grid>
 
 					<Grid
 						item
-						xs
+						sm
 						container
 						justify="flex-end"
 						direction="row"

@@ -36,6 +36,10 @@ const useStyles = makeStyles((theme) => ({
 		// marginLeft: 5,
 		// fontFamily: "Titillium Web",
 		// zIndex: "0",
+		"&:hover": {
+			background: "#283258",
+			color: "white",
+		},
 	},
 }));
 
@@ -46,7 +50,7 @@ const ProfessionalTeachers = () => {
 		<div className={classes.root}>
 			<Container maxWidth="lg">
 				<Grid container>
-					<Grid xs container>
+					<Grid xs>
 						<h2 style={{ color: "#394781" }}>Our Professional Teachers</h2>
 						<p style={{ color: "#394781" }}>
 							We have a team of designers, software developers and IT
@@ -57,7 +61,7 @@ const ProfessionalTeachers = () => {
 							See More
 						</Button>
 					</Grid>
-					<Grid xs>
+					<Grid xl>
 						<img src={PeopleLOL} alt="peopleLOL" className={classes.img} />
 					</Grid>
 				</Grid>
