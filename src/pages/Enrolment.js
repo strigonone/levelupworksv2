@@ -43,7 +43,7 @@ const Enrolment = () => {
 
     return (
         <div className="enrol-form-box">
-            <img className="levelup-logo" src={LevelUpLogo} alt="Level Up Works Logo" />
+            <a href="/"><img className="levelup-logo" src={LevelUpLogo} alt="Level Up Works Logo" /></a>
             <ProgressTrack />
             <LoginButton />
             <h1>Enrolment form</h1>
