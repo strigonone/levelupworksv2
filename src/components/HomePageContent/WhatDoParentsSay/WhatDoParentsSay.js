@@ -55,11 +55,11 @@ export default class WhatDoParentsSay extends Component {
 		};
 
 		return (
-			<Container maxWidth="lg">
+			<Container  maxWidth="lg">
 				<h2 style={{ textAlign: "center" }}>
 					What Do Our Parents and Students Say?
 				</h2>
-				<Slider {...settings}>
+				<Slider className="border-carousel" {...settings}>
 					<div className="box">
 						<img src={jane} alt="jane" className="imgSettings" />
 						<h3>Jane</h3>
@@ -100,6 +100,7 @@ export default class WhatDoParentsSay extends Component {
 					</div>
 				</Slider>
 			</Container>
+			
 		);
 	}
 }
