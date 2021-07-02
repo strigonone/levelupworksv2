@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import InteractiveClass from "../../../assets/img/interactiveclass.jpg";
 import alanteaching from "../../../assets/img/alanteaching.jpg";
@@ -28,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
 		// display: "flex",
 		// flexDirection: "row",
 		// justifyContent: "space-between",
-		// textDecoration: "none",
+
 		// padding: "0",
 		// width: "85%",
 		cursor: "pointer",
@@ -41,6 +42,13 @@ const useStyles = makeStyles((theme) => ({
 			transition: "0.5s",
 			// fontWeight: "1600",
 		},
+		"&:a": {
+			textDecoration: "none",
+		},
+	},
+	link: {
+		textDecoration: "none",
+		// color: theme.palette.text.primary,
 	},
 }));
 
@@ -74,7 +82,9 @@ const CourseGallery = () => {
 						/>
 					</Grid>
 				</Grid>
-				<h2 className={classes.seeMoreLink}>See More</h2>
+				<Link to="/courseGallerySeeMore" className={classes.link}>
+					<h2 className={classes.seeMoreLink}>See More</h2>
+				</Link>
 			</Container>
 		</div>
 	);
