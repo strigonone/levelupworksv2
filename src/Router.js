@@ -5,6 +5,8 @@ import Enrolment from "./pages/Enrolment";
 import Dashboard from "./pages/Dashboard";
 import seeMoreCourseGallery from "./pages/CourseGallerySeeMore";
 
+import Course1LocationTest from "./pages/Course1LocationTest";
+
 const Router = () => {
 	return (
 		<div>
@@ -17,6 +19,7 @@ const Router = () => {
 					path="/courseGallerySeeMore"
 					component={seeMoreCourseGallery}
 				/>
+				<Route exact path="/course1location" component={Course1LocationTest} />
 			</Switch>
 		</div>
 	);
